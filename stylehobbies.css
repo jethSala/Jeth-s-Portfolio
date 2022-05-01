@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display:ital,wght@1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*Nav*/
+.deep-nav {
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    width: 34.1%;
+    padding: 20px;
+}
+
+#site-logo {
+    float: left;
+    padding: 13px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+.nav-list {
+    padding: 20px;
+}
+
+.nav-list>a{
+    color: rgb(0, 0, 0);
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-list>a li{
+    float: left;
+    margin-left: 20px;
+}
+
+.nav-list>a:hover {
+    color: rgb(151, 72, 255);
+    transition: 0.5s;
+}
+/*nav*/
+
+.title-hobbies {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+#hobbies {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    background: rgb(255, 255, 255);
+    height: 500px;
+    margin-top: 0px;
+    z-index: 1;
+}
+
+#hobbies>table {
+    width: 100%;
+    height: 500px;
+}
+
+#hobbies>table tr {
+    width: 100%;
+    height: 250px;
+}
+
+#hobbies>table tr td{
+    width: 20%;
+    height: 250%;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+    font-size: 8px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
+    border-radius: 20px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    margin-left: -1000px;
+    background-color: #50006a;
+}
+
+#hobbies>table tr td h3{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#hobbies>table tr:nth-child(1) td:nth-child(1), #hobbies>table tr:nth-child(2) td:nth-child(5) {
+    background-color: rgb(0, 0, 0);
+}
+
+/*hover*/
+#hobbies>table tr td:hover h1{
+    letter-spacing: 5px;
+    transition: 0.5s;
+}
+
+#hobbies>table tr td:hover h3{
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+#hobbies>table tr td h1{
+    transition: 0.5s;
+}
+
+/*blocks*/
+
+.prog, .gaming, .sing, .read, .mming, .draw, .drive, .model, .basketb, .swim {
+    width: 1200px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50.5%;
+    position: absolute;
+    border-radius: 20px;
+    z-index: 0;
+    height: 500px;
+    clip-path: circle(0.2% at 0 0);
+    margin-top: 0px;
+    transition: 0.5s;
+    pointer-events: all;
+    padding: 20px 40px 20px 40px;  
+    opacity: 1;
+}
+
+.prog>h1, .gaming>h1, .sing>h1, .read>h1, .mming>h1, .draw>h1, .drive>h1, .model>h1, .basketb>h1, .swim>h1 {
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 10px;
+}
+
+.prog>h2, .gaming>h2, .sing>h2, .read>h2, .mming>h2, .draw>h2, .drive>h2, .model>h2, .basketb>h2, .swim>h2 {
+    text-align: center;
+    width: 50px;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    border: 2px solid white;
+    font-size: 15px;
+    letter-spacing: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.prog>h2:hover, .gaming>h2:hover, .sing>h2:hover, .read>h2:hover, .mming>h2:hover, .draw>h2:hover, .drive>h2:hover, .model>h2:hover, .basketb>h2:hover, .swim>h2:hover {
+    width: 170px;
+    transition: 0.5s;
+}
+
+.prog>p, .gaming>p, .sing>p, .read>p, .mming>p, .draw>p, .drive>p, .model>p, .basketb>p, .swim>p {
+    text-align: left;
+    padding: 20px 20px 40px 20px;
+    font-family: 'Lato', sans-serif;
+    line-height: 25px;
+    letter-spacing: 4px;
+}
+
+.gaming, .sing, .read, .mming, .draw, .drive, .model, .basketb, .swim {
+    background-color: #50006a;
+    color:white;
+}
+
+.prog, .swim {
+    background: black;
+    color: white;
+}
+
+.unhide {
+    z-index: 9;
+    clip-path: circle(140.9% at 0 0);
+    transition: 0.5s;
+}

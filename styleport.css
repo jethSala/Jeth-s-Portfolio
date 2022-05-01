@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display:ital,wght@1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*Nav*/
+.deep-nav {
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    width: 34.1%;
+    padding: 20px;
+}
+
+#site-logo {
+    float: left;
+    padding: 13px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+.nav-list {
+    padding: 20px;
+}
+
+.nav-list>a{
+    color: rgb(0, 0, 0);
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-list>a li{
+    float: left;
+    margin-left: 20px;
+}
+
+.nav-list>a:hover {
+    color: rgb(151, 72, 255);
+    transition: 0.5s;
+}
+/*nav*/
+
+/*logos*/
+#boxes-logo {
+    width: 1100px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#boxes-logo>table {
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+}
+
+#boxes-logo>table tr{
+    width: 100%;
+}
+
+#boxes-logo>table tr td{
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+#boxes-logo>table tr td:nth-child(1){
+    border-right: 2px solid black;
+}
+
+#boxes-logo>table tr td:nth-child(2){
+    border-left: 2px solid black;
+    text-align: left    ;
+}
+
+#boxes-logo>table tr td h1{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 5px;
+    padding: 20px;
+}
+
+
+#boxes-logo>table tr td:nth-child(2) h1{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 5px;
+    padding: 20px 20px 20px 50px;
+}
+
+#boxes-logo>table tr td p{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#boxes-logo>table tr td h4{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 0 0 20px 50px;
+}
+
+.s-contain>h4{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.s-contain {
+    width: 100%;
+    padding: 20px 20px 20px 0;
+    margin-left: 50px;
+    border-left: 5px solid black;
+}
+
+.s-contain>ul li {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 0 0 50px;
+    line-height: 20px;
+}
+
+#boxes-logo>table tr td:nth-child(1) img{
+    width: 150px;
+    display: inline-block;
+    margin-top: 10px;
+}

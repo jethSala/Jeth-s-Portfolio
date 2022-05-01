@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display:ital,wght@1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*Nav*/
+.deep-nav {
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    width: 34.1%;
+    padding: 20px;
+}
+
+#site-logo {
+    float: left;
+    padding: 13px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+.nav-list {
+    padding: 20px;
+}
+
+.nav-list>a{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-list>a li{
+    float: left;
+    margin-left: 20px;
+}
+
+.nav-list>a:hover {
+    color: rgb(151, 72, 255);
+    transition: 0.5s;
+    text-shadow: 0 0 5px rgb(151, 72, 255);
+}
+/*nav*/
+
+body {
+    background-color: black;
+}
+
+/*contact*/
+
+#contTable {
+    width: 1000px;
+    margin: auto;
+    height: 500px;
+    margin-top: 30px;
+    position: relative;
+    top: 3px;
+}
+
+#border {
+    width: 1005px;
+    margin: auto;
+    height: 535px;
+    background: linear-gradient(to right,#8a00c3, black,black,black, #8a00c3);
+}
+
+#contTable tr {
+    width: 100%;
+    height: 500px;
+}
+
+#contTable tr td:nth-child(1) {
+    width: 50%;
+    height: 500px;
+    background-color: white;
+}
+
+#contTable tr td:nth-child(2) {
+    width: 50%;
+    height: 500px;
+    background: url(Sakura.jpg);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#contTable tr td:nth-child(1) h1{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    padding: 20px;
+    letter-spacing: 5px;    
+}
+/*inputs*/
+
+#contTable tr td h5{
+    font-family: 'Lato', sans-serif;
+}
+
+#contTable tr td:nth-child(2) h5{
+    padding: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.inp-name, .inp-email {
+    padding: 10px 2px 5px 2px;
+    outline: none;
+    width: 100%;
+    border-bottom: 3px solid black;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.inp-name:hover, .inp-email:hover {
+    border-color: rgb(157, 0, 189);
+    transition: 0.5s;
+}
+
+#contTable tr td:nth-child(2) textarea {
+    outline: none;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/*button*/
+
+.btn-submit {
+    padding: 10px 40px;
+    background: black;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-submit:hover {
+    background: white;
+    color: black;
+    transition: 0.3s;
+}
+
+/*r-links*/
+.r-link {
+    float: right;
+    margin-right: 10px;
+}
+
+.r-link>a li, .r-link>li {
+    list-style: none;
+}
+
+.r-link>li {
+    pointer-events: none;
+    cursor: none;
+}
+
+.r-link>a, .r-link>li {
+    text-decoration: none;
+    float: left;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
+}
+
+.r-link>a:hover {
+    transition: 0.3s;
+    text-shadow: 0 0 5px white;
+}
+
+.thanks, .pls-inp {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    background: white;
+    pointer-events: none;
+    opacity: 0;
+    z-index: -1;
+    height: 100%;
+}
+
+.thanks>h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 5px;
+    padding: 20px;
+    margin-top: 15%;
+}
+
+.thanks>p {
+    padding: 5px 20px 35px 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.thanks>a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.thanks>a:hover {
+    color: purple;
+    transition: 0.5s;
+}
+
+.un {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 9;
+}
+
+/**/
+
+.pls-inp>h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 5px;
+    padding: 20px;
+    margin-top: 15%;
+}
+
+.pls-inp>p {
+    padding: 5px 20px 35px 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.pls-inp>a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.pls-inp>a:hover {
+    color: purple;
+    transition: 0.5s;
+}
